@@ -1,0 +1,131 @@
+<div class="header-wrap">
+    <div class="header-left">
+        <div class="logo-box">
+            <a href="/index.html"><img src="/images/logo.png" ></a>
+        </div>
+    </div>
+    <div class="header-mid">
+        <ul class="nav">
+            
+            <li class="typeDropDown"> <a href="javascript:;">男子</a> </li>
+            <li class="typeDropDown">  <a href="javascript:;">女子</a> </li>
+            <li>  <a href="javascript:;">X-BIONIC</a> </li>
+            <li>   <a href="javascript:;">专属定制</a> </li>
+            <li>   <a href="javascript:;">断码区</a> </li>
+          
+        </ul>
+    </div>
+    <div class="header-right">
+        <ul class="nav-right">
+            <li><p id="searchBtn"><img src="/images/search.png" ><span>搜索</span></p>
+                <input type="text" placeholder="搜索" id="searchInput">
+            </li>
+            <li id="unlogin"><span id="login-btn" >登录</span>
+                <span id="register-btn">/注册</span>
+            </li>
+             <!-- 登录后的下拉框 -->
+             <li id="havelogined"><span id="myworld">个人中心</span>
+                 <ul id="mydrapdown">
+                     <li>订单列表</li>
+                     <li>我的积分</li>
+                     <li>基本资料</li>
+                     <li id="drapdownExit">退出登录</li>
+                 </ul>
+             </li>
+
+            <li class="car"><a href="/html/cart.html"><img src="/images/cart.png"  id="flyEnd"><span>购物车</span><i id="carNum">0</i></a></li>
+        </ul>
+    </div>
+</div>
+<!-- 头部分类页 -->
+<div class="header-add-wrap" id="goodstypes">
+   <div class="header-add">
+       <div class="add1">
+           <ul>
+               <li><a href="javascript:;">新品推荐</a></li>
+               <li><a href="javascript:;">断码优惠</a></li>
+           </ul>
+       </div>
+       <div class="add2">
+        <ul class="add2-left">
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+        </ul>
+        <ul class="add2-middle">
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+        </ul>
+        <ul class="add2-right">
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+        </ul>
+       </div>
+       <div class="add3">
+        <ul class="add2-right">
+            <li><a href="javascript:;">新品推荐</a></li>
+            <li><a href="javascript:;">断码优惠</a></li>
+        </ul>
+       </div>
+   </div>     
+</div>
+<!-- 登录注册模态框 -->
+<div class="modal-wrap" id="modalWarp">
+        <span id="close-btn1" class="close1">X</span>
+        <div class="modal">
+           <h3>会员登录</h3>
+           <p>已是会员,请登录</p>
+           <div class="local-login">
+                <div class="user-wrap">
+                        <label for="username">登录名：</label>
+                        <input type="text" id="username" placeholder="请输入用户名">
+                    </div>
+                    <div class="pwd-wap">
+                            <label for="pwd" >密码：</label>
+                            <input type="text" id="pwd" placeholder="请输入密码">
+                    </div>
+                    <div class="btn-wrap">
+                            <button type="button" id="modal-login">登录</button>
+                            <button type="button" id="modal-register">注册</button>
+                     </div>
+                     <p><input type="checkbox" id="remberme">七天免登录</p>
+           </div>
+           <div class="thirdparty">
+                <button type="button" >
+                        <img src="/images/th_qq.png" alt="">
+                </button>
+                <button type="button">
+                        <img src="/images/th_sina.png" alt="">
+                </button>
+                <button type="button">
+                        <img src="/images/th_wx.png" alt="">
+                </button>
+            </div>
+
+        </div>
+</div>
+
+<!-- 注册模态框 -->
+<div class="register-modal-wrap" id="register-modal">
+    <div class="register-modal">
+        <span id="close-btn2" class="close2">X</span>
+        <h3>新会员注册</h3>
+        <p>还不是会员?赶快注册会员</p>
+        <div class="re-username-wrap">
+            <label for="register-usename">用户名:</label><br/>
+            <input type="text"id="register-usename" placeholder="请输入用户名">
+          </div>
+        <div class="re-pwd-wrap">
+            <label for="register-pwd">密码:</label><br />
+            <input type="text"id="register-pwd" placeholder="请输入密码">
+          </div>
+          <div class="re-btn-wrap">
+              <button id="re-btn">注册</button>
+          </div>
+    </div>
+</div>

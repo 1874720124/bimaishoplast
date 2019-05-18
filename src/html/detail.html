@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>必迈商城详情页</title>
+    <!-- <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/css/detail.css">
+    <script></script>
+</head>
+<body>
+
+    <!-- 头部容器 -->
+    <header id="header-container"></header>
+    <!-- 路径导航 -->
+    <p class="paths"> <a href="/">首页 </a> <a href="/html/list.html">列表页</a><a href="/html/detail.html">详情页</a></p>
+    <!-- detail主体部分容器 -->
+    <div class="main-wrap" id="detail"></div>
+    <script type="text/html" id="detailTemp">
+        <div class="mian-left-wrap">
+                <div class="view_thumbs" id="gal1">
+                        <ul class="view-ul">
+                            <li class="current">
+                                <a href="#" data-image="{{data.imgs1[0]}}" data-zoom-image="{{data.imgs1[0]}}">
+                                    <img class="s" src="{{data.imgs1[0]}}" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs1[1]}}" data-zoom-image="{{data.imgs1[1]}}">
+                                    <img class="s" src="{{data.imgs1[1]}}" />
+                                 </a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs1[2]}}" data-zoom-image="{{data.imgs1[2]}}">
+                                    <img class="s" src="{{data.imgs1[2]}}" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs1[3]}}" data-zoom-image="{{data.imgs1[3]}}">
+                                    <img class="s" src="{{data.imgs1[3]}}" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-image="{{data.imgs1[4]}}" data-zoom-image="{{data.imgs1[4]}}">
+                                    <img class="s" src="{{data.imgs1[4]}}" />
+                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="view_bd">
+                        <img class="zoom-img" src="{{data.imgs1[0]}}" data-zoom-image="{{data.imgs1[0]}}"/>
+                    </div>
+        </div>
+        <div class="mian-right-wrap">
+            <h3>{{data.title}}</h3>
+            <h5><span class="price">￥{{data.price}}</span> <span class="star">★★★★★</span></h5>
+            <h5><span class="price">钢铁灰</span> <span class="star">款号：{{data.code}}</span></h5>
+            <ul class="colorTypeBox">
+                <li class="prevColorType"></li>
+                <li><img src="{{data.imgs2[0]}}" alt=""></li> 
+                <li><img src="{{data.imgs2[1]}}" alt=""></li>
+                <li><img src="{{data.imgs2[2]}}" alt=""></li>
+                <li><img src="{{data.imgs2[3]}}" alt=""></li>
+                <li class="nextColorType"></li>
+            </ul>
+            <div class="messageWarp">
+                    <div class="message">
+                        <a href="">尺寸对照表</a>
+                        <div class="sss"><span>39</span></div>
+                    </div>
+                    <div class="message">
+                        <a href="">库存: <span>充足</span>(销量4602件)</a>
+                        <div class="sss"><span>数量（1）</span></div>
+                    </div>
+                </div>
+                <div class="buymethod">
+                    <span href="" id="addcar">加入购物车</span>
+                    <a href="javascript:;" id="buynow">立即购买</a>   
+                </div>
+        </div>
+    </script>
+ <script src="/libs/requirejs/require.js" data-main="/js/detail"></script> 
+</body>
+</html>

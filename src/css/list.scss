@@ -1,0 +1,122 @@
+@import "module/header.scss";
+@import "module/base.scss";
+@import"module/footer.scss";
+$color:#4a4a4a;
+.title-wrap{
+    width: 100%;
+    height: 125px;
+    .title{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 70px;
+        border-bottom:1px solid #eeeeee; 
+        height: 125px;
+        p{
+margin-top: 5px;
+text-align: left;
+a{
+    color: #4a4a4a;
+}
+        } 
+        h3{
+            text-align: left;
+           margin-top:25px;
+           color: #4a4a4a; 
+        } 
+    }
+}
+.content-container{
+    width: 100%;
+    height: 1055px;
+   
+    .con-wrap{
+        width: 90%;
+        margin: 0 auto;
+        height: 1055px;
+        // border: 1px solid;
+        // 侧边栏部分
+        .con-left{
+            width: 15%; 
+            border: 1px solid #eeeeee;
+            height: 375px;
+            float: left;
+            .con-left-bot{
+                height: 35%;  
+            }
+            .con-left-top{
+                width: 100%;
+                height: 60%;
+                overflow: hidden;
+                border-bottom:  1px solid #eeeeee;
+                
+                .top-title {
+                    height: 20%;
+                    h3{
+                      float: left;
+                      height: 100%;
+                     line-height: 45px;
+                    }
+                    h1{  
+                        height: 100%;  
+                        float: right; 
+                        text-align: right;
+                        span:nth-child(1){
+                            display: none;
+                        }
+                    }
+                } 
+            }
+            
+        }
+        .con-right{
+            float: right;
+            width: 80%; 
+            
+            .right-title {
+                height:60px;
+                // border: 1px solid;
+               p{
+                 height:60px;
+                   float: right;
+                   text-align: right;
+                  line-height:60px;
+               }
+            } 
+            .goods-wrap{
+                height:995px;
+               
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .good{
+                    width: 20%;
+                    height: 315px;
+                    border: 1px solid #dddddd;
+                    img{
+                        width: 100%;
+                        height: 60%;
+                    }
+                    .good-bot{
+                        width: 100%;
+                        height: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        p{color: $color;}
+                        p:nth-child(3){
+                            span:nth-child(1){
+                                float: left;
+                                color: $color;
+                            }
+                            span:nth-child(2){
+                                float: right;
+                                text-align: right;
+                                color: purple;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

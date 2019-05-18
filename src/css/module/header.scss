@@ -1,0 +1,354 @@
+
+.shadow{
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	background: rgba(0,0,0,.3);
+	left: 0;
+    top: 0;
+    z-index: 40;
+}
+.header-wrap{
+    background: white;
+    width: 100%;
+    height: 70px;
+	position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ccc;
+    .header-left {
+        float: left;
+        // background: red;
+        height:100%;
+        width: 6%;
+        .logo-box{
+          width: 70%;
+          height:70% ;
+         margin:15%;
+          a{
+            display: block;
+            width: 100%;
+            height:100% ; 
+            img{
+                width: 100%;
+                height:100% ;
+            }  
+          }
+        }
+    }
+    .header-mid {
+        float: left;
+       width: 60%;
+        height:100%;
+        // background: purple;
+        .nav{
+            display: flex;
+            width: 72%;
+            height:100% ;
+            margin:  0 17%;
+            align-items: center;
+            li{
+                display: flex;
+                list-style: none;
+                align-items: center;
+                height:100%;
+                width: 20%;
+                justify-content: center;
+                &:hover{
+                    border-bottom: 2px solid black;
+                }
+                // background: black;
+                a{
+                    color: #505050;
+                    text-decoration: none;
+                    font-size: 18px;
+                }
+            }
+        }
+        
+    }
+    .header-right{
+        float: right;
+        // background: blue;
+        height:100%;
+        width:34%;
+        .nav-right{
+            width: 80%;
+            margin: 0 auto;
+            height:100% ; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                span{
+                    text-align: center;
+                    text-decoration: none;
+                    color: #505050;
+                }
+            }
+            li:nth-child(1){
+                p{
+                    // display: none;
+                    font-size: 16px; 
+                }
+                position: relative;
+                input{
+                    display: none;
+                    position: absolute;
+                    z-index: 10;
+                    left: -60px;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    height: 30px;
+                    width: 130px; 
+                }
+            }
+            #unlogin{
+                display: block;
+            }
+            #havelogined{
+                display: none;
+               position: relative;
+               span{
+                float: left;
+                width: 100%;  
+                font-size: 16px; 
+               }
+              #mydrapdown{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-around;
+                  align-items: center;
+                  width: 103px;
+                  height: 200px;
+                  background: white;
+                  position: absolute;
+                  left:-14px;
+                  top: 24px;
+                  z-index: 100;
+                 opacity: 0;
+                  li{
+                      width: 100%;
+                      height: 20px;
+                      display: flex;
+                      justify-content: center;
+                      &:hover{
+                          background: plum;
+                      }
+                  }
+                 
+              }
+            }
+            .car{
+                position: relative;
+                i{
+                    font-size: 12px;
+                    color: white;
+                    position: absolute;
+                    left: -9px;
+                    top: -4px;
+                    background: #440099;
+                    text-align: center;
+                    height: 15px;
+                    width: 15px;
+                    line-height: 15px;
+                    border-radius: 51%;
+                    font-style: normal;
+                }
+            }
+            
+        }
+    }
+
+}
+// 头部type下拉框
+.header-add-wrap{
+    background:white;
+    display: none;
+    width: 100%;
+    height: 223px;
+	position: fixed;
+    top: 72px;
+    left: 0;
+    z-index: 10;
+    a{color: #d5d5d5;}
+    .header-add{
+        width: 50%;
+        height: 223px; 
+        margin: 0 auto;
+        display: flex;
+        
+        .add1 {
+            border-right: 1px solid #d5d5d5; 
+            width: 20%;
+            height: 55%;
+             ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;  
+             }
+        }
+        .add2 {
+            height: 55%;
+            border-right: 1px solid #d5d5d5; 
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+        
+            ul{
+                width: 33%; 
+                list-style: none;
+            }
+        }
+        .add3 {
+            height: 55%;
+            border-right: 1px solid #d5d5d5; 
+            width: 20%; 
+            list-style: none;
+        }
+    }
+    }
+    // 登录模态框
+    .modal-wrap{
+        #remberme{
+            width: 20%;
+            height: 25px;
+            margin-bottom: 12px;
+        }
+        display: none;
+        margin: 0 auto;
+        width:400px;
+        height: 600px;
+        position: absolute;
+        top:100px;
+        left: 300px;
+        z-index: 60;
+        background: #ccc;
+        .close1{
+            float: right;
+            width: 30px;
+            height: 20px;
+            text-align: left;
+        }
+        .modal{
+            width: 80%;
+            height:100%;
+            margin: 0 auto;
+            h3{
+                width: 100%; 
+                text-align: center;
+                margin-top: 50px;
+                height: 40px;
+                line-height: 40px; 
+                color: #505050;
+               
+            }
+            p{
+                text-align: center; 
+                height: 40px;
+                line-height: 40px;
+                color: #505050;
+                
+            }
+            h6{
+                text-align: left; 
+                height: 40px;
+                line-height: 40px;  
+                width: 100%; 
+            }
+            .local-login{
+                input,button{
+                width: 100%; 
+                height: 40px;
+                margin-bottom: 30px;
+            }
+            button{
+                background: purple;
+            }
+
+            }
+            .thirdparty{
+                width: 100%; 
+                height: 60px;
+                display: flex;
+                justify-content: space-between; 
+                align-items: center;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }  
+                button{
+                    border: none;
+                }
+            }
+            
+        }
+    }
+   
+    // 注册模态框
+    .register-modal-wrap{
+        display: none;
+        width: 410px;
+        height: 400px;
+        background: #eeeeee;
+        overflow: hidden;
+        position: absolute;
+        top:100px;
+        left: 300px;
+        z-index: 60;
+        .close2{
+            float: right;
+            width: 30px;
+            height: 20px;
+            text-align: left;
+        }
+    }
+    .register-modal{
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 50px;
+    /*	border: 1px solid;*/
+    }
+    h3{
+        width: 100%;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        color: #d4d4d4;
+        
+    }
+    p{
+        width: 100%;
+        height: 25px;
+        text-align: center;
+        line-height: 25px;
+        color: #d4d4d4;
+        font-size: 14px;
+        
+    }
+    .re-username-wrap,.re-pwd-wrap{
+        width: 100%;
+        height: 25px;
+        margin-bottom: 40px;
+        
+    }
+    .re-username-wrap input,.re-pwd-wrap input{
+        width: 100%;
+        border: 1px solid;
+        height: 25px;
+    }
+    .re-btn-wrap{
+        width: 20%;
+        height: 25px;
+        margin: 0 auto;
+    }
+    .ac{
+        display: none;
+    }
+    

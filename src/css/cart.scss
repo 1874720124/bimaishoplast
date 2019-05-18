@@ -1,0 +1,218 @@
+@import "module/header.scss";
+@import "module/base.scss";
+@import"module/footer.scss";
+// 步骤容器
+.step-warp{
+   width: 100%;
+   height:100px;
+   margin-top: 72px; 
+//    border: 1px solid;
+   .steps{
+    width: 66.66666667%;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    li{
+    width: 33%;
+    text-align: center;
+    line-height: 100px;
+    color: #440099;
+    i{
+        font-size: 40px;
+        color: #440099;
+    }
+    }
+   }
+}
+.theadBox{
+   width: 90%;
+   height: 68px;
+   margin: 0 auto;
+   border: 1px solid #d5d5d5; 
+   display: flex;
+   justify-content: space-around;
+   li{
+    height: 68px;
+    line-height: 68px;
+   }
+   .thead{
+       width: 80%;
+        ul{
+            height:68px;
+            display: flex;
+            justify-content: space-around;
+            li{
+                width: 20%;
+                height: 68px;
+                line-height: 68px;
+            }
+        }
+   }
+
+}
+// 购物车数据
+div{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #d5d5d5;
+.carTypes{
+    width: 100%;
+   height: 120px;
+   margin: 0 auto;
+//    border: 1px solid #d5d5d5; 
+   display: flex;
+   justify-content: space-around;
+   .fixed{
+    height: 120px;
+    line-height: 120px; 
+   }
+   .last{
+    margin-left: 20px;
+    .cancle{
+        background:red;
+        width: 40px;
+        height: 40px;
+        
+    }
+   }
+   .types{
+    width: 80%;
+    ul{
+        height:120px;
+        display: flex;
+        // justify-content: space-around;
+        // li{
+        //     height: 120px;
+        //     line-height: 120px;
+        //     border: 1px solid;
+        //    }
+           li:nth-child(1){
+            width: 11%;
+            height:120px;
+            div{ 
+                // text-align: center;
+                a{
+                display: block;
+                 width: 80%;
+                 height:120px;
+                position: relative;
+                    img{
+                        width: 80%;
+                        height: 45%;
+                         border: 1px solid;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+        li:nth-child(2){
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // text-align: center;
+           a{
+               display: block;
+                height: 22px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                font-size: 16px;
+                font-family: 'microsoft yahei';
+                color: #333;
+            }
+            span{
+                display: block;
+                height: 22px;
+                font-size: 16px;
+                font-family: 'microsoft yahei';
+                color: #333;
+            }
+        }
+        li:nth-child(3){
+            width: 20%;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            span{
+                display: block;
+                height: 22px;
+                font-size: 16px;
+                font-family: 'microsoft yahei';
+                color: #333;
+            }
+        }
+        li:nth-child(4){
+            text-align: center;
+            width: 22%;
+            height: 120px;
+            line-height: 120px;
+            input{
+                width: 30%
+            }
+        }
+        li:nth-child(5){
+            text-align: right;
+            width: 20%;
+            height: 120px;
+            line-height: 120px;
+        }
+    } 
+   }
+ 
+}
+}
+.emptyCar{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: none;
+}
+.carBottom{
+    width: 90%;
+    margin: 0 auto;
+    height: 240px;
+    // border: 1px solid #d5d5d5;
+    .left{
+        width: 40%;
+        float: left;
+        display: flex;
+        justify-content: space-between;
+        li{
+            text-align: center;
+            height: 22px;
+            line-height: 22px;
+        }
+    }
+    .right{
+        float: right;  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        li{
+            text-align: right;
+            height: 22px;
+            line-height: 22px;
+            a{
+                width: 195px;
+                display: inline-block;
+                text-align: center;
+                border: 1px solid #440099;
+                height: 40px;
+                font-size: 14px;
+                line-height: 40px;
+            }
+            a:nth-child(2){
+                background: #440099;
+                color: white;
+            }
+        }
+    }
+}

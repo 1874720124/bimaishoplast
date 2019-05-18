@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>必迈列表页</title>
+    <!-- <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/libs/font/iconfont.css">
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+<body>
+    <!-- 头部容器 -->
+   <div id="header-container"></div> 
+     <!-- title -->
+     <div class="title-wrap">
+         <div class="title">
+             <p>
+                 <a href="/index.html">首页 </a>
+                 <a href="">全部商品</a>
+            </p>
+            <h3>全部商品（230）</h3>
+         </div>
+     </div>
+     <!-- content部分 -->
+     <div class="content-container">
+        <div class="con-wrap">
+            <!-- 侧边栏 -->
+                <div class="con-left">
+                    <!-- 侧边栏上部分 -->
+                    <div class="con-left-top">
+                       <div class="top-title">
+                            <h3>产品类型</h3><h1><span>+</span><i>-</i></h1>
+                       </div>
+                        <div class="checkgoods">
+                            <p><input type="checkbox">鞋</p>
+                            <p><input type="checkbox">服</p>
+                            <p><input type="checkbox"> 配件</p>
+                            <p><input type="checkbox">其他</p>
+                            <p><input type="checkbox"> 众测</p>
+                            <p><input type="checkbox">福袋</p>
+                        </div>
+                    </div>
+                    <!-- 侧边栏下部分 -->
+                    <div class="con-left-top con-left-bot">
+                           <div class="top-title">
+                               <!-- 默认减号显示 -->
+                                <h3>价格</h3><h1><span>+</span><i>-</i></h1>
+                           </div>
+                           <!-- 点击减号后消失 -->
+                            <div class="checkprice">
+                                <p><input type="checkbox">0-100</p>
+                                <p><input type="checkbox">100-200</p>
+                                <p><input type="checkbox"> 200-300</p>
+                                <p><input type="checkbox">300-400</p>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="con-right">
+                    <div class="right-title">
+                        <p>排序方式 : 最新上市  最高人气 
+                         价格最高  价格最低
+                        </p>
+                    </div>
+                    <!-- 后台请求数据渲染 -->
+                    <div class="goods-wrap" id="list-box">
+                            <script type="text/html" id="listpage-temp">
+                                {{each list item}}
+                                <div class="good">
+                                        <a href="/html/detail.html?id={{item.id}}"><img src="{{item.image}}" ></a>
+                                        <div class="good-bot">
+                                            <p>{{item.type}}</p>
+                                            <p>{{item.name}}</p>
+                                            <p><span>{{item.price}}</span>
+                                                <span>
+                                                        {{item.star}}     
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                {{/each}}
+                            </script>
+                            <!-- <div class="good"></div>  
+                            <div class="good"></div>  
+                            <div class="good"></div> 
+                            <div class="good"></div>    
+                            <div class="good"></div>  
+                            <div class="good"></div>  
+                            <div class="good"></div>  
+                            <div class="good"></div> 
+                            <div class="good"></div>    
+                            <div class="good"></div>  
+                            <div class="good"></div>   -->
+                            
+                    </div>
+                </div>
+        </div>
+     </div>
+     <div id="footer-container">
+         
+     </div>
+   <script src="/libs/requirejs/require.js" data-main="/js/list"></script> 
+</body>
+</html>
